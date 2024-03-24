@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  zoom: 90%;
+}
+
+body {
+  height: 100vh;
+}
+.overlay-grid {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  width: 100%;
+  margin-top: 210px;
+  justify-content: center;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.grid-item {
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+}
+
+#cell-96,
+#cell-85,
+#cell-98,
+#cell-70,
+#cell-97,
+#cell-87,
+#cell-100,
+#cell-80,
+#cell-89,
+#cell-59,
+#cell-77,
+#cell-57,
+#cell-75,
+#cell-56,
+#cell-83,
+#cell-62,
+#cell-82,
+#cell-32,
+#cell-55,
+#cell-14,
+#cell-49,
+#cell-36,
+#cell-30,
+#cell-10,
+#cell-40,
+#cell-19,
+#cell-28,
+#cell-47,
+#cell-21,
+#cell-2,
+#cell-3,
+#cell-23,
+#cell-6,
+#cell-26 {
+  background-image: url("../assets/overlay-board/portal1.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

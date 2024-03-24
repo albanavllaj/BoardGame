@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Board Game</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../assets/logo-images/icon-board-game.png"
+    />
+    <link href="https://fonts.cdnfonts.com/css/games" rel="stylesheet" />
+    <link id="customStylesheet" rel="stylesheet" href="../css/theme1.css" />
+    <link rel="stylesheet" href="../css/main_board_styling.css" />
+  </head>
+
+  <body>
+    <h1>Stage 1: The Discovery</h1>
+    <div class="game-container">
+      <div class="board flexing" id="board"></div>
+      <div class="players">
+        <main class="main-container">
+          <div class="active-player">
+            <img
+              src="../assets/dice-images/dice.gif"
+              alt="dice gif"
+              type="gif"
+              class="gif"
+            />
+            <h2 id="text">Active player</h2>
+          </div>
+
+          <div id="current-player-name" class="adding_names"></div>
+          <div id="playerNames" class="adding_players"></div>
+
+          <img
+            src="../assets/dice-images/dice-5.png"
+            alt="Playing dice"
+            class="dice"
+          />
+
+          <div class="flexing">
+            <div class="container">
+              <button class="btn btn--pause" id="pauseButton">
+                Pause Game
+              </button>
+
+              <button class="btn btn--roll">🎲 Roll</button>
+
+              <button class="btn btn--exit-pushable" id="exitButton">
+                <span class="btn--exit-shadow"></span>
+
+                <span class="btn--exit-edge"></span>
+
+                <span class="btn--exit-front text"> Exit </span>
+              </button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <div id="winnerModal" class="modal">
+      <div class="winner-modal-content">
+        <span class="close">&times;</span>
+        <p id="winner-message"></p>
+      </div>
+    </div>
+
+    <div id="pauseModal" class="modal">
+      <div class="modal-content">
+        <h2 id="game-paused-message" class="pause_game">Game Paused</h2>
+        <div class="button-class">
+          <button class="btn btn--resume" id="resumeButton">Resume Game</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlay-container">
+      <iframe
+        id="ladder"
+        src="../html/ladder.html"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    </div>
+
+    <div id="overlay-container2">
+      <iframe
+        id="snake"
+        src="../html/snake.html"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    </div>
+
+    <div id="overlay-container3">
+      <iframe
+        id="portal"
+        src="../html/portal.html"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    </div>
+
+    <script type="module" src="../js/board-script.js"></script>
+    <script type="module" src="../js/player.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+body {
+  height: 100vh;
+  background-image: url("../assets/avatar-images/img2.jpg");
+  position: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 60px);
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+.tile {
+  width: 60px;
+  height: 60px;
+  padding: 20px;
+  border: 1px solid black;
+  text-align: center;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #365e7d, #452a17);
+  border: 0.25px solid black;
+}
+
+/* player part */
+
+#overlay-container,
+#overlay-container2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#ladder,
+#snake {
+  width: 100%;
+  height: 100%;
+  border: none;
+  overflow: hidden;
+}

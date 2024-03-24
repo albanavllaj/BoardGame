@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Board Game</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../assets/logo-images/icon-board-game.png"
+    />
+    <link href="https://fonts.cdnfonts.com/css/games" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/homepage_styles.css" />
+  </head>
+  <body>
+    <img
+      class="background-img"
+      src="../assets/avatar-images/image_back.png"
+      alt="Background image"
+    />
+    <header>
+      <h1>Zen Zone Challenge</h1>
+    </header>
+    <div class="flexing1">
+      <div class="container1">
+        <label>
+          <input type="radio" name="option" value="theme1" />
+          <img
+            class="theme1"
+            src="../assets/avatar-images/img2.jpg"
+            alt="the first image"
+        /></label>
+        <label>
+          <input type="radio" name="option" value="theme2" />
+          <img
+            class="theme2"
+            src="../assets/avatar-images/img1.jpg"
+            alt="the first image"
+        /></label>
+      </div>
+    </div>
+
+    <form id="my-form" class="filling_form" action="board.html">
+      <div class="container-wrapper">
+        <div class="container3">
+          <div class="user_profile">
+            <div class="profile_photo1"></div>
+            <div class="gamer1 gamer">Player 1:</div>
+            <div class="input1 enter">
+              <input
+                id="player1"
+                type="text"
+                placeholder="Enter your gamer name:"
+                required
+              />
+            </div>
+            <div class="profile_photo2"></div>
+            <div class="gamer2 gamer">Player 2:</div>
+            <div class="input2 enter">
+              <input
+                id="player2"
+                type="text"
+                placeholder="Enter your gamer name:"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="select_avatar">
+            <div class="label"><h3>Select your avatar:</h3></div>
+            <div class="avatar1"></div>
+            <div class="avatar2"></div>
+            <div class="avatar3"></div>
+            <div class="avatar4"></div>
+            <div class="avatar5"></div>
+            <div class="avatar6"></div>
+            <div class="avatar7"></div>
+            <div class="avatar8"></div>
+            <div class="avatar9"></div>
+          </div>
+        </div>
+      </div>
+      <div class="flexing2">
+        <div class="container2">
+          <button class="btn help" type="button">HELP</button>
+          <button id="play-button" class="btn play" type="submit">
+            ▶ PLAY
+          </button>
+          <button class="btn cancel" type="button" id="cancel-button">
+            CANCEL
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>How to Play 'Don't Get Mad</h1>
+
+      <h2>Objective:</h2>
+      <p>
+        Welcome to the game of "Don't Get Mad"! This fun and competitive game is
+        all about luck, and staying cool under pressure. The goal is to be the
+        first player to get to the last tile while trying to sabotage your
+        opponent.
+      </p>
+      <h2>Gameplay:</h2>
+      <ul>
+        <li>The game will be only a 2 Player game.</li>
+        <li>Players take turns.</li>
+        <li>You start the game only when you roll a 6.</li>
+        <li>The dice rolls up to 6.</li>
+        <li>If you roll a 6, you get an extra turn.</li>
+        <li>
+          If you roll a 6 you roll again up to three times and the number of
+          tiles you are going to move adds up
+        </li>
+
+        <li>
+          If you land on an opponent's tile, you "bump" them back to their
+          starting area.
+        </li>
+        <li>
+          If your game piece lands on a ladder, you get to climb it and advance
+          to the higher-numbered cell at the top of the ladder. Ladders are
+          shortcuts in the game.
+        </li>
+        <li>
+          If your game piece lands on a snake, you must slide down it and move
+          to the lower-numbered cell at the tail of the snake. Snakes are
+          obstacles that set you back in the game.
+        </li>
+      </ul>
+
+      <h2>Winning:</h2>
+      <p>
+        The player who first reaches the 100th cell is declared the winner
+        🎉🎉🎉.
+      </p>
+
+      <p>
+        "Don't Get Mad" is a game that combines skill, strategy, and a bit of
+        luck. So, keep your cool and have a blast playing with friends and
+        family!
+      </p>
+    </div>
+
+    <div class="tutorial-container">
+      <div class="character">
+        <img src="../assets/avatar-images/guide.png" alt="Guide Character" />
+      </div>
+      <div class="tutorial-text">
+        <p>
+          Welcome to a glimpse into the future! This glimpse into the future
+          paints a picture of a world where technology and humanity coexist
+          harmoniously, enhancing our lives and opening up limitless
+          possibilities for a brighter tomorrow.
+        </p>
+      </div>
+    </div>
+
+    <script src="../js/homepage_help_modal.js"></script>
+    <script src="../js/cancel.js"></script>
+    <script type="module" src="../js/homepage.js"></script>
+  </body>
+</html>

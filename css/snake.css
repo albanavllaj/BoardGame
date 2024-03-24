@@ -1,0 +1,85 @@
+*{
+  zoom: 90%;
+}
+.overlay-grid2 {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 220px;
+  z-index: 200;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(10, 60px);
+  justify-content: center;
+}
+.grid-item2 {
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+#cell-1 {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+#cell-5 {
+  grid-row: span 3;
+}
+#cell-7 {
+  grid-row: span 2;
+}
+#cell-14 {
+  grid-column: span 2;
+  grid-row: span 3;
+  background-image: url("../assets/overlay-board/dragon7.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#cell-18,
+#cell-32 {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+#cell-20 {
+  grid-row: span 6;
+}
+
+#cell-52 {
+  grid-row: span 2;
+  grid-column: span 2;
+  background-image: url("../assets/overlay-board/dragon11.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#cell-21 {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+#cell-35 {
+  grid-row: span 4;
+}
+#cell-48 {
+  grid-row: span 3;
+}
+
+#cell-20,
+#cell-5,
+#cell-48,
+#cell-35 {
+  background-image: url("../assets/overlay-board/dragon4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#cell-18,
+#cell-32,
+#cell-1 {
+  background-image: url("../assets/overlay-board/dragon8.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

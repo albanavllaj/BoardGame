@@ -1,0 +1,95 @@
+*{
+  zoom: 90%;
+}
+.overlay-grid {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 220px;
+  z-index: 100;
+}
+
+.for-test {
+  background-color: #333;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 60px);
+  justify-content: center;
+}
+.grid-item {
+  padding: 30px;
+  box-sizing: border-box;
+}
+#cell-77 {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+#cell-3 {
+  grid-row: span 3;
+}
+#cell-10 {
+  grid-row: span 3;
+}
+#cell-13 {
+  grid-row: span 6;
+  grid-column: span 2;
+}
+
+#cell-27 {
+  grid-column: span 5;
+  grid-row: span 2;
+  background-image: url("../assets/overlay-board/ladderR_1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#cell-31 {
+  grid-row: span 3;
+  height: 100px;
+}
+#cell-39 {
+  grid-row: span 4;
+  grid-column: span 2;
+  grid-row: span 3;
+}
+#cell-35 {
+  grid-row: span 3;
+  grid-row: span 3;
+}
+#cell-41 {
+  grid-column: span 3;
+  grid-row: span 4;
+  background-image: url("../assets/overlay-board/ladder2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#cell-44 {
+  grid-row: span 2;
+}
+#cell-48 {
+  grid-row: span 2;
+}
+
+#cell-35,
+#cell-3,
+#cell-10,
+#cell-48 {
+  background-image: url("../assets/overlay-board/ladderR.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#cell-39,
+#cell-13 {
+  background-image: url("../assets/overlay-board/ladderR_2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 5px;
+}
